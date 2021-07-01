@@ -1,0 +1,130 @@
+:root {
+  --main-dark: #3521b5;
+  --main-bright: #5138ed;
+  --borders: #c5c2d2;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "M PLUS Rounded 1c", sans-serif;
+}
+
+.container {
+  min-height: 100vh;
+  display: flex;
+}
+
+.left {
+  width: 50%;
+}
+
+.right {
+  width: 50%;
+  background-color: var(--main-bright);
+}
+
+.helper {
+  width: 75%;
+  margin: 10% auto;
+}
+
+.header-left {
+  margin-top: 10%;
+  margin-bottom: 2%;
+  font-weight: 800;
+}
+
+.h2-left {
+  color: #676478;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.google {
+  width: 100%;
+  margin-top: 8%;
+  margin-bottom: 2%;
+  padding: 15px 30px;
+  background-color: #fff;
+  border: none;
+  border-radius: 100px 100px 100px 100px;
+  border-color: var(--borders);
+  border-style: solid;
+  border-width: 1px;
+}
+
+.light {
+  color: var(--borders);
+  width: 100%;
+  text-align: center;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+.light:before,
+.light:after {
+  background-color: var(--borders);
+  content: "";
+  display: inline-block;
+  height: 1px;
+  position: relative;
+  vertical-align: middle;
+  width: 30%;
+}
+
+.light:before {
+  right: 0.5em;
+}
+.light:after {
+  left: 0.5em;
+}
+
+.label-top {
+  font-weight: 700;
+}
+
+.form-input {
+  display: block;
+  width: 100%;
+  border-radius: 100px 100px 100px 100px;
+  border-color: var(--borders);
+  border-style: solid;
+  border-width: 1px;
+  padding: 15px 30px;
+  margin-top: 1%;
+  margin-bottom: 2%s;
+}
+
+.radio-helper {
+  display: inline-block;
+}
+
+.radio-helper input[type="radio"] {
+  border: 1px solid var(--main-dark);
+  padding: 8px;
+  -webkit-appearance: none;
+  border-radius: 25%;
+  background-color: var(--main-bright);
+}
+
+/* .radio-helper input[type="radio"] + label {
+  border: 1px solid #fff;
+  padding: 0.5em;
+  -webkit-appearance: none;
+}
+
+.radio-helper input[type="radio"] {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  margin: -1px 4px 0 0;
+  vertical-align: middle;
+  cursor: pointer;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.33);
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: center;
+  line-height: 25px;
+} */
