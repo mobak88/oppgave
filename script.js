@@ -1,3 +1,5 @@
+"use strict";
+
 // Variabler
 
 const btnGoogle = document.querySelector(".google");
@@ -18,7 +20,7 @@ const validation = function (input, rule, inputValue, logRequired) {
     input.classList.remove("invalid");
     input.classList.add("valid");
   } else {
-    console.log(`Type in correct ${logRequired}`);
+    console.log(`Skriv inn riktig ${logRequired}`);
     input.classList.remove("valid");
     input.classList.add("invalid");
   }
@@ -33,9 +35,12 @@ btnGoogle.addEventListener("click", function (e) {
 
 form.addEventListener("submit", function (e) {
   e.preventDefault();
-  validation(emailInput, tester, emailInput, "Email");
-  validation(passwordInput, passwordChecker, passwordInput, "Password");
-  if (emailInput.classList.contains("valid") && passwordInput.length < 8) {
-    console.log("You logged in");
+  validation(emailInput, tester, emailInput, "E-post");
+  validation(passwordInput, passwordChecker, passwordInput, "Passord");
+  if (
+    emailInput.classList.contains("valid") &&
+    passwordInput.classList.contains("valid")
+  ) {
+    console.log("Du har logget inn");
   }
 });
