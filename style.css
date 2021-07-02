@@ -3,6 +3,8 @@
   --main-bright: #5138ed;
   --borders: #d8d4eb;
   --bright-text: #a7a5b1;
+  --border-invalid: #dc143c;
+  --border-valid: #00d100;
 }
 
 * {
@@ -118,12 +120,24 @@
   display: block;
   width: 100%;
   border-radius: 100px 100px 100px 100px;
-  border-color: var(--borders);
-  border-style: solid;
-  border-width: 1px;
+  border: 1px solid var(--borders);
   padding: 18px 30px;
   margin-top: 1%;
   margin-bottom: 5%;
+}
+
+.invalid {
+  border: 3px solid var(--border-invalid);
+}
+
+.valid {
+  border: 3px solid var(--border-valid);
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
 }
 
 .form-input::placeholder {
@@ -195,6 +209,11 @@ a {
   height: 350px;
   background-color: #fff;
   z-index: 2;
+  transition: ease-out 0.5s;
+  -webkit-transition: ease-out 0.5s;
+  -moz-transition: ease-out 0.5s;
+  -o-transition: ease-out 0.5s;
+  -ms-transition: ease-out 0.5s;
 }
 
 .card2 {
@@ -205,6 +224,35 @@ a {
   position: absolute;
   margin-right: 10%;
   z-index: 1;
+  transition: ease-out 0.5s;
+  -webkit-transition: ease-out 0.5s;
+  -moz-transition: ease-out 0.5s;
+  -o-transition: ease-out 0.5s;
+  -ms-transition: ease-out 0.5s;
+}
+
+.card1:hover {
+  z-index: 3;
+  transition: ease 0.5s;
+  -webkit-transition: ease 0.5s;
+  -moz-transition: ease 0.5s;
+  -o-transition: ease 0.5s;
+  -ms-transition: ease 0.5s;
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.card2:hover {
+  z-index: 3;
+  transition: ease 0.5s;
+  -webkit-transition: ease 0.5s;
+  -moz-transition: ease 0.5s;
+  -o-transition: ease 0.5s;
+  -ms-transition: ease 0.5s;
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .card-heading {
