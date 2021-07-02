@@ -263,3 +263,16 @@ a {
     margin-bottom: 200px;
   }
 }
+
+@media screen and (max-width: 600px) {
+  .card2 {
+    display: none;
+  }
+
+  .cards {
+    margin-bottom: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
