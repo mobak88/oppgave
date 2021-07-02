@@ -1,0 +1,164 @@
+:root {
+  --main-dark: #3521b5;
+  --main-bright: #5138ed;
+  --borders: #d8d4eb;
+  --bright-text: #a7a5b1;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "M PLUS Rounded 1c", sans-serif;
+}
+
+.container {
+  min-height: 100vh;
+  display: flex;
+}
+
+.left {
+  width: 50%;
+}
+
+.right {
+  width: 50%;
+  background-color: var(--main-bright);
+}
+
+.helper {
+  width: 75%;
+  margin: 10% auto;
+  max-width: 500px;
+}
+
+.header-left {
+  margin-top: 10%;
+  margin-bottom: 2%;
+  font-weight: 800;
+}
+
+.h2-left {
+  color: #676478;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.google {
+  width: 100%;
+  margin-top: 8%;
+  margin-bottom: 5%;
+  padding: 18px 30px;
+  background-color: #fff;
+  border: none;
+  border-radius: 100px 100px 100px 100px;
+  border-color: var(--borders);
+  border-style: solid;
+  border-width: 1px;
+  font-weight: 800;
+  font-size: 16px;
+}
+
+.google:hover {
+  background-color: rgb(243, 243, 243);
+}
+
+.google-img {
+  margin-right: 4%;
+  vertical-align: middle;
+}
+
+.light {
+  color: var(--borders);
+  width: 100%;
+  text-align: center;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.light:before,
+.light:after {
+  background-color: var(--borders);
+  content: "";
+  display: inline-block;
+  height: 1px;
+  position: relative;
+  vertical-align: middle;
+  width: 30%;
+}
+
+.light:before {
+  right: 0.5em;
+}
+.light:after {
+  left: 0.5em;
+}
+
+.form-input {
+  display: block;
+  width: 100%;
+  border-radius: 100px 100px 100px 100px;
+  border-color: var(--borders);
+  border-style: solid;
+  border-width: 1px;
+  padding: 18px 30px;
+  margin-top: 1%;
+  margin-bottom: 5%;
+}
+
+.form-input::placeholder {
+  color: var(--bright-text);
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.radio-helper {
+  display: inline-block;
+}
+
+.radio-helper input[type="checkbox"] {
+  padding: 9px;
+  -webkit-appearance: none;
+  border-radius: 25%;
+  background-color: var(--main-dark);
+  vertical-align: middle;
+}
+
+.inline {
+  display: inline-block;
+  max-width: 50%;
+  margin-bottom: 5%;
+}
+
+.bold {
+  font-weight: 700;
+  color: #252330;
+}
+
+.forgot-helper {
+  float: right;
+}
+
+.login-helper {
+  display: block;
+}
+
+.login {
+  background-color: var(--main-bright);
+  border-radius: 100px 100px 100px 100px;
+  padding: 18px 30px;
+  width: 100%;
+  border: none;
+  color: #fff;
+  margin-bottom: 5%;
+}
+
+.login:hover {
+  background-color: var(--main-dark);
+}
+
+a {
+  color: var(--main-bright);
+  text-decoration: none;
+  font-weight: 800;
+}
