@@ -17,6 +17,21 @@
   display: flex;
 }
 
+@media screen and (max-width: 1080px) {
+  .container {
+    flex-direction: column-reverse;
+    max-width: 100%;
+  }
+
+  #right-mobile {
+    width: 100%;
+  }
+
+  #left-mobile {
+    width: 100%;
+  }
+}
+
 .left {
   width: 50%;
 }
@@ -186,7 +201,8 @@ a {
 .cards {
   display: flex;
   flex-direction: row-reverse;
-  margin-bottom: 200px;
+  margin-bottom: 255px;
+  margin-top: 100px;
 }
 
 .card1 {
