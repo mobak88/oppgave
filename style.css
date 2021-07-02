@@ -89,7 +89,7 @@
 }
 
 .light {
-  color: var(--borders);
+  color: #b3afc5;
   width: 100%;
   text-align: center;
   margin-top: 5%;
@@ -274,5 +274,13 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: 50px;
+  }
+
+  .light:before {
+    display: none;
+  }
+  .light:after {
+    display: none;
   }
 }
