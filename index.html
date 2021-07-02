@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@100;300;400;500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Prosjekt</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="left">
+        <div class="helper">
+          <object data="img\lightning.svg" width="50" height="50"></object>
+
+          <h1 class="header-left">Login</h1>
+          <p class="h2-left">See your growth and get consulting support!</p>
+          <button class="google">
+            <object
+              data="img\search.svg"
+              width="23"
+              height="23"
+              class="google-img"
+            ></object
+            >Sign in with Google
+          </button>
+          <p class="light"><span>or sign in with Email</span></p>
+          <form action="" class="">
+            <label for="email" class="label-top bold">Email*</label>
+            <input
+              class="form-input"
+              type="text"
+              id="email"
+              placeholder="mail@website.com"
+            />
+            <label for="password" class="label-top bold">Password*</label>
+            <input
+              class="form-input"
+              type="text"
+              id="password"
+              placeholder="Min. 8 character"
+            />
+            <div class="inline">
+              <div class="radio-helper">
+                <label for="remember" class="remember bold">
+                  <input
+                    type="checkbox"
+                    id="remember"
+                    checked="checked"
+                    class="square-radio"
+                  />
+                  <span class="bold">Remember me</span>
+                </label>
+              </div>
+            </div>
+            <div class="inline forgot-helper">
+              <a href="url" class="forgot">Forgot password?</a>
+            </div>
+            <div class="login-helper">
+              <button class="login bold">Login</button>
+            </div>
+          </form>
+          <p class="bold">
+            Not registered yet? <a href="url">Create an Account</a>
+          </p>
+        </div>
+      </div>
+      <div class="right">
+        <div class="helper"></div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
