@@ -6,8 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@100;300;400;500;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
@@ -16,7 +18,7 @@
   <body>
     <div class="container">
       <div class="left">
-        <div class="helper">
+        <div class="helper left-max">
           <object data="img\lightning.svg" width="50" height="50"></object>
 
           <h1 class="header-left">Login</h1>
@@ -34,14 +36,14 @@
           <form action="" class="">
             <label for="email" class="label-top bold">Email*</label>
             <input
-              class="form-input"
+              class="form-input email"
               type="text"
               id="email"
               placeholder="mail@website.com"
             />
             <label for="password" class="label-top bold">Password*</label>
             <input
-              class="form-input"
+              class="form-input password"
               type="text"
               id="password"
               placeholder="Min. 8 character"
@@ -72,7 +74,44 @@
         </div>
       </div>
       <div class="right">
-        <div class="helper"></div>
+        <div class="helper right-max">
+          <div class="cards">
+            <div class="card1">
+              <h2 class="card-heading">Rewards</h2>
+              <div class="avatar-container">
+                <object
+                  data="img\user.svg"
+                  width="150"
+                  height="150"
+                  class="avatar-img"
+                ></object>
+              </div>
+              <p class="paragraf-cards">Points</p>
+              <h2 class="card-points">172,832</h2>
+            </div>
+            <div class="card2" id="card2">
+              <h2 class="card-heading numbers">$ 162,751</h2>
+              <div>
+                <object
+                  data="img\undraw_visual_data_re_mxxo.svg"
+                  width="170"
+                  height="170"
+                  class="avatar-img"
+                ></object>
+              </div>
+            </div>
+          </div>
+          <div class="content-right">
+            <h1 class="header-right">
+              Turn your ideas <br />
+              into reality
+            </h1>
+            <p class="paragraf-right">
+              Consistent quality and experience across<br />
+              all platforms and devices
+            </p>
+          </div>
+        </div>
       </div>
     </div>
 
