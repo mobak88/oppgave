@@ -424,3 +424,9 @@ a {
     display: none;
   }
 }
+
+@media screen and (max-width: 380px) {
+  .card1 {
+    max-width: 85%;
+  }
+}
