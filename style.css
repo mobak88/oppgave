@@ -81,6 +81,39 @@
   font-size: 16px;
 }
 
+.socials {
+  margin-left: 4%;
+  display: flex;
+  flex-direction: row;
+}
+
+.round-twitter {
+  border-radius: 100%;
+  margin-top: 100px;
+  height: 100px;
+  width: 100px;
+  border: none;
+}
+
+.round-insta {
+  border-radius: 100%;
+  margin-top: -25px;
+  margin-left: 100px;
+  height: 80px;
+  width: 80px;
+  border: none;
+}
+
+.round-messenger {
+  position: absolute;
+  border-radius: 100%;
+  margin-top: 400px;
+  margin-left: 30%;
+  height: 80px;
+  width: 80px;
+  border: none;
+}
+
 .google:hover {
   background-color: rgb(243, 243, 243);
 }
@@ -127,11 +160,11 @@
 }
 
 .invalid {
-  border: 3px solid var(--border-invalid);
+  border: 2px solid var(--border-invalid);
 }
 
 .valid {
-  border: 3px solid var(--border-valid);
+  border: 2px solid var(--border-valid);
 }
 
 input:focus,
@@ -199,12 +232,13 @@ a {
 
 .cards {
   display: flex;
-  flex-direction: row-reverse;
-  margin-bottom: 255px;
-  margin-top: 100px;
+  flex-direction: row;
+  margin: 100px auto 360px auto;
 }
 
 .card1 {
+  position: absolute;
+  margin-left: 20%;
   min-width: 320px;
   height: 350px;
   background-color: #fff;
@@ -217,12 +251,12 @@ a {
 }
 
 .card2 {
-  min-width: 380px;
+  width: 380px;
   height: 250px;
   background-color: rgb(247, 247, 247);
   margin-top: 260px;
+  margin-left: 2%;
   position: absolute;
-  margin-right: 10%;
   z-index: 1;
   transition: ease-out 0.5s;
   -webkit-transition: ease-out 0.5s;
@@ -293,6 +327,42 @@ a {
   text-align: center;
 }
 
+@media screen and (max-width: 1600px) {
+  .socials {
+    margin-left: 4%;
+    max-height: 150px;
+    display: flex;
+    flex-direction: row;
+    margin: 550px auto 0 auto;
+  }
+
+  .round-twitter {
+    margin: 0 30px 0 110px;
+  }
+
+  .round-insta {
+    margin: 0;
+  }
+
+  .round-messenger {
+    margin: 0 30px 0 0;
+  }
+
+  .cards {
+    margin-bottom: 60px;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .card1 {
+    margin-left: 12%;
+  }
+
+  .cards {
+    margin-bottom: 60px;
+  }
+}
+
 @media screen and (max-width: 1080px) {
   .container {
     flex-direction: column-reverse;
@@ -308,21 +378,43 @@ a {
   }
 
   .cards {
-    margin-bottom: 200px;
+    margin-bottom: 60px;
+  }
+
+  .card1 {
+    margin-left: 25%;
+  }
+
+  .card2 {
+    margin-right: 20%;
   }
 }
 
 @media screen and (max-width: 600px) {
+  .card1 {
+    position: relative;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
   .card2 {
     display: none;
   }
 
+  .socials {
+    display: none;
+  }
+
   .cards {
-    margin-bottom: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
     margin-top: 50px;
+    margin-bottom: 0;
+  }
+
+  .content-right {
+    margin-top: 40px;
   }
 
   .light:before {
