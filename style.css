@@ -188,7 +188,7 @@ select:focus {
   -webkit-appearance: none;
   border-radius: 25%;
   background-color: var(--main-dark);
-  vertical-align: middle;
+  vertical-align: text-top;
 }
 
 .inline {
@@ -333,7 +333,7 @@ a {
     max-height: 150px;
     display: flex;
     flex-direction: row;
-    margin: 550px auto 0 auto;
+    margin: 450px auto 0 auto;
   }
 
   .round-twitter {
@@ -349,7 +349,11 @@ a {
   }
 
   .cards {
-    margin-bottom: 60px;
+    margin: 100px auto 20px auto;
+  }
+
+  .card2 {
+    margin-top: 160px;
   }
 }
 
@@ -359,7 +363,7 @@ a {
   }
 
   .cards {
-    margin-bottom: 60px;
+    margin-bottom: 20px;
   }
 }
 
