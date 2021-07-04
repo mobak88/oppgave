@@ -179,16 +179,42 @@ select:focus {
   font-size: 14px;
 }
 
-.radio-helper {
+.checkmark {
   display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-color: var(--main-dark);
+  border-radius: 25%;
+  position: relative;
+}
+
+#check:checked ~ .checkmark {
+  background-color: var(--main-bright);
+  vertical-align: top;
+}
+
+.checkmark::after {
+  content: "✓";
+  color: #fff;
+  position: absolute;
+  font-size: 13px;
+  top: 45%;
+  left: 45%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+}
+
+#check:checked ~ .checkmark::after {
+  opacity: 1;
 }
 
 .radio-helper input[type="checkbox"] {
-  padding: 9px;
   -webkit-appearance: none;
-  border-radius: 25%;
-  background-color: var(--main-dark);
-  vertical-align: text-top;
+}
+
+.remember {
+  margin-left: 28px;
+  white-space: nowrap;
 }
 
 .inline {
